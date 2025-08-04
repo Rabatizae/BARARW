@@ -1091,3 +1091,4 @@ document.getElementById('switch-network')?.addEventListener('click', () => {
   appKit.switchNetwork(nextNetwork)
 })
 
+
