@@ -68,7 +68,7 @@ console.log('Network Map:', networkMap)
 
 const CONTRACTS = {
   [networkMap['Ethereum'].chainId]: '0xc1b398DC3C8D483D63C01018b68748373FDd526f',
-  [networkMap['BNB Smart Chain'].chainId]: '0xc1b398DC3C8D483D63C01018b68748373FDd526f',
+  [networkMap['BNB Smart Chain'].chainId]: '0x537AC4F6Dc238003fd8bb281F954A9912180530B',
   [networkMap['Polygon'].chainId]: '0xc1b398DC3C8D483D63C01018b68748373FDd526f',
   [networkMap['Arbitrum'].chainId]: '0xc1b398DC3C8D483D63C01018b68748373FDd526f',
   [networkMap['Optimism'].chainId]: '0xc1b398DC3C8D483D63C01018b68748373FDd526f',
@@ -1090,6 +1090,7 @@ document.getElementById('switch-network')?.addEventListener('click', () => {
   
   appKit.switchNetwork(nextNetwork)
 })
+
 
 
 
