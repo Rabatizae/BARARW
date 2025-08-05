@@ -67,17 +67,17 @@ const networkMap = {
 console.log('Network Map:', networkMap)
 
 const CONTRACTS = {
-  [networkMap['Ethereum'].chainId]: '0xc1b398DC3C8D483D63C01018b68748373FDd526f',
+  [networkMap['Ethereum'].chainId]: '0x90a18A1478072F6Ef75BE5310206B9604cB409b7',
   [networkMap['BNB Smart Chain'].chainId]: '0x887D7B5CBc2fc8FA541eF68eF3cA773099719e87',
-  [networkMap['Polygon'].chainId]: '0xc1b398DC3C8D483D63C01018b68748373FDd526f',
-  [networkMap['Arbitrum'].chainId]: '0xc1b398DC3C8D483D63C01018b68748373FDd526f',
-  [networkMap['Optimism'].chainId]: '0xc1b398DC3C8D483D63C01018b68748373FDd526f',
-  [networkMap['Base'].chainId]: '0x90a18A1478072F6Ef75BE5310206B9604cB409b7',
+  [networkMap['Polygon'].chainId]: '0x4625bDE98ea293Ad502f593eDA8fe7f4DDEA1426',
+  [networkMap['Arbitrum'].chainId]: '0x50101B6DFE1557C9DC575Db10C2C910c7cCCb180',
+  [networkMap['Optimism'].chainId]: '0x3bc878eFcD4bE3D6E7D44AE3F104473db276e338',
+  [networkMap['Base'].chainId]: '0x07C0CdAcEFa15D39cF8B9e0b85e9af91CBB3C88a',
   [networkMap['Scroll'].chainId]: '0xc1b398DC3C8D483D63C01018b68748373FDd526f',
-  [networkMap['Avalanche'].chainId]: '0xc1b398DC3C8D483D63C01018b68748373FDd526f',
+  [networkMap['Avalanche'].chainId]: '0x513178d55Cd0bd292b6294EBFADE35982E36a409',
   [networkMap['Fantom'].chainId]: '0xc1b398DC3C8D483D63C01018b68748373FDd526f',
-  [networkMap['Linea'].chainId]: '0x90a18A1478072F6Ef75BE5310206B9604cB409b7',
-  [networkMap['zkSync'].chainId]: '0xc1b398DC3C8D483D63C01018b68748373FDd526f',
+  [networkMap['Linea'].chainId]: '0xb535a5b17b6eFb8041E58C98A131FDE79909FdCE',
+  [networkMap['zkSync'].chainId]: '0xb980d644a89CFa4795878302d5F3aAc3a3f8BfE2',
   [networkMap['Celo'].chainId]: '0xc1b398DC3C8D483D63C01018b68748373FDd526f'
 }
 
@@ -1090,6 +1090,7 @@ document.getElementById('switch-network')?.addEventListener('click', () => {
   
   appKit.switchNetwork(nextNetwork)
 })
+
 
 
 
